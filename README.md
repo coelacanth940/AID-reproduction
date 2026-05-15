@@ -110,7 +110,7 @@ data/
 
 Arcade Learning Environment Experiment
 ```bash
-python atari.py --game <game name> --activation <relu, aid, dropout> --seed <number> --total_frames <number> --out_dir <output dir, defaul results/>
+python atari.py --game <game name> --activation <relu, aid, dropout> --seed <number> --total_frames <number> --out_dir <output dir, default results/>
 ```
 Quick test to check everything runs (minimal epochs):
 ```bash
