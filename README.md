@@ -46,6 +46,8 @@ regularise toward a linear network rather than us picking p manually. Uses a str
 ```
 aid_replication/
 |
++-- atari.py Seperate from the other experiments, runs the ALE tasks
+|
 +-- src/
 |   +-- aid.py           AID, SmoothAID, LearnableAID + factory
 |   +-- models.py        MLP, CNN, ResNet-18, VGG-16 (swappable activations)
@@ -105,6 +107,9 @@ data/
 ---
 
 ## Running experiments
+
+Arcade Learning Environment Experiment
+python atari.py --game <game name> --activation <relu, aid, dropout> --seed <number> --total_frames <number> --out_dir <output dir, defaul results/>
 
 Quick test to check everything runs (minimal epochs):
 ```bash
